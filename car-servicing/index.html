@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <title>Car Serivce | Bootstrap Project Given by IC</title>
+    <!-- Google Font CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <!-- Bootstrap Icon CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+    <!-- Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+    <!-- Header Section Start -->
+    <header id="mainHeader">
+        <!-- Nav Start -->
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="nav-container container py-5">
+                <a class="navbar-brand" href="#">
+                    <img src="./images/logo.png" alt="Logo" />
+                </a>
+                <button type="button" class="custom-btn ms-4 me-auto">
+                    <i class="bi bi-list"></i> <span>Услуги</span>
+                </button>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center pt-5 pt-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Работы</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">О компании</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Акции</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Контакты</a>
+                        </li>
+                        <li class="nav-item ms-2">
+                            <a class="nav-link" href="tel:++74952077570">+7 495 207-75-70</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Nav End -->
+        <!-- Header Content Start -->
+        <div class="container">
+            <div class="row">
+                <div class="text-center text-md-start col-lg-8 col-xl-6">
+                    <div class="header-content">
+                        <h1>Премиальное обслуживание вашего автомобиля</h1>
+                        <a href="#" class="custom-btn btn-1 mb-3"><span>Запись в сервис</span>
+                            <i class="bi bi-chevron-right ms-2"></i></a>
+                        <a href="#" class="custom-btn btn-2 mb-3"><i class="bi bi-chat-text me-2"></i>
+                            <span>Консультация</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Header Content End -->
+    </header>
+    <!-- Header Section End -->
+    <!-- Price Section Start -->
+    <section id="price">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-4 col-md-6">
+                    <div class="card card1 my-3">
+                        <div class="badge">АКЦИЯ</div>
+                        <div class="card-body d-flex flex-column justify-content-between p-4 w-75">
+                            <h3>Обклейка авто<br>пленкой</h3>
+                            <p class="mt-auto mb-0">
+                                <small>от</small> <span class="fs-5">32 000 ₽</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                    <div class="card card2 my-3">
+                        <div class="badge">АКЦИЯ</div>
+                        <div class="card-body d-flex flex-column justify-content-between p-4 w-75">
+                            <h3>Слесарный<br>ремонт</h3>
+                            <p class="mt-auto mb-0">
+                                <small>от</small> <span class="fs-5">2 999 ₽</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                    <div class="card card3 my-3">
+                        <div class="badge">АКЦИЯ</div>
+                        <div class="card-body d-flex flex-column justify-content-between p-4 w-75">
+                            <h3>Покраска<br>дисков</h3>
+                            <p class="mt-auto mb-0">
+                                <small>от</small> <span class="fs-5">4 000 ₽</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                    <div class="card card4 my-3">
+                        <div class="badge">АКЦИЯ</div>
+                        <div class="card-body d-flex flex-column justify-content-between p-4 w-75">
+                            <h3>Тюнинг выхлопной<br>системы</h3>
+                            <p class="mt-auto mb-0">
+                                <small>от</small> <span class="fs-5">32 000 ₽</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                    <div class="card card5 my-3">
+                        <div class="badge">АКЦИЯ</div>
+                        <div class="card-body d-flex flex-column justify-content-between p-4 w-75">
+                            <h3>Кузовной <br>ремонт</h3>
+                            <p class="mt-auto mb-0">
+                                <small>от</small> <span class="fs-5">32 000 ₽</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                    <div class="card card6 my-3">
+                        <div class="badge">АКЦИЯ</div>
+                        <div class="card-body d-flex flex-column justify-content-between p-4 w-75">
+                            <h3>Мойка <br>автомобиля</h3>
+                            <p class="mt-auto mb-0">
+                                <small>от</small> <span class="fs-5">990 ₽</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Price Section End -->
+    <!-- Blog Section Start -->
+    <section id="blog" class="mb-3 py-5 position-relative">
+        <div class="slider-btn">
+            <button>
+                <div class="swiper-button-next"></div>
+            </button>
+            <button>
+                <div class="swiper-button-prev"></div>
+            </button>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h2>Избранные работы</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="card border-0 bg-transparent">
+                                    <div class="card-header bg-transparent border-0 position-relative">
+                                        <div class="badge position-absolute">
+                                            3 фото
+                                        </div>
+                                        <a href="#">
+                                            <img src="./images/car-1.png" class="card-img-top" alt="Car One">
+                                        </a>
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title mb-3"><a href="#">Бронирование автомобиля
+                                                пленкой Illumar</a></h5>
+
+                                        <a href="" class="d-flex justify-content-between"><span>Подробнее об
+                                                услуге</span> <i class="bi bi-chevron-right"></i></a>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card border-0 bg-transparent">
+                                    <div class="card-header bg-transparent border-0 position-relative">
+                                        <div class="badge position-absolute">
+                                            3 фото
+                                        </div>
+                                        <a href="#">
+                                            <img src="./images/car-2.png" class="card-img-top" alt="Car Two">
+                                        </a>
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title mb-3"><a href="#">Бронирование автомобиля
+                                                пленкой Illumar</a></h5>
+
+                                        <a href="" class="d-flex justify-content-between"><span>Подробнее об
+                                                услуге</span> <i class="bi bi-chevron-right"></i></a>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card border-0 bg-transparent">
+                                    <div class="card-header bg-transparent border-0 position-relative">
+                                        <div class="badge position-absolute">
+                                            3 фото
+                                        </div>
+                                        <a href="#">
+                                            <img src="./images/car-3.png" class="card-img-top" alt="Car Three">
+                                        </a>
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title mb-3"><a href="#">Бронирование автомобиля
+                                                пленкой Illumar</a></h5>
+
+                                        <a href="" class="d-flex justify-content-between"><span>Подробнее об
+                                                услуге</span> <i class="bi bi-chevron-right"></i></a>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card border-0 bg-transparent">
+                                    <div class="card-header bg-transparent border-0 position-relative">
+                                        <div class="badge position-absolute">
+                                            3 фото
+                                        </div>
+                                        <a href="#">
+                                            <img src="./images/car-4.png" class="card-img-top" alt="Car Four">
+                                        </a>
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title mb-3"><a href="#">Бронирование автомобиля
+                                                пленкой Illumar</a></h5>
+
+                                        <a href="" class="d-flex justify-content-between"><span>Подробнее об
+                                                услуге</span> <i class="bi bi-chevron-right"></i></a>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card border-0 bg-transparent">
+                                    <div class="card-header bg-transparent border-0 position-relative">
+                                        <div class="badge position-absolute">
+                                            3 фото
+                                        </div>
+                                        <a href="#">
+                                            <img src="./images/car-2.png" class="card-img-top" alt="Car Five">
+                                        </a>
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title mb-3"><a href="#">Бронирование автомобиля
+                                                пленкой Illumar</a></h5>
+
+                                        <a href="" class="d-flex justify-content-between"><span>Подробнее об
+                                                услуге</span> <i class="bi bi-chevron-right"></i></a>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card border-0 bg-transparent">
+                                    <div class="card-header bg-transparent border-0 position-relative">
+                                        <div class="badge position-absolute">
+                                            3 фото
+                                        </div>
+                                        <a href="#">
+                                            <img src="./images/car-1.png" class="card-img-top" alt="Car Six">
+                                        </a>
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title mb-3"><a href="#">Бронирование автомобиля
+                                                пленкой Illumar</a></h5>
+
+                                        <a href="" class="d-flex justify-content-between"><span>Подробнее об
+                                                услуге</span> <i class="bi bi-chevron-right"></i></a>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card border-0 bg-transparent">
+                                    <div class="card-header bg-transparent border-0 position-relative">
+                                        <div class="badge position-absolute">
+                                            3 фото
+                                        </div>
+                                        <a href="#">
+                                            <img src="./images/car-4.png" class="card-img-top" alt="Car Seven">
+                                        </a>
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title mb-3"><a href="#">Бронирование автомобиля
+                                                пленкой Illumar</a></h5>
+
+                                        <a href="" class="d-flex justify-content-between"><span>Подробнее об
+                                                услуге</span> <i class="bi bi-chevron-right"></i></a>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card border-0 bg-transparent">
+                                    <div class="card-header bg-transparent border-0 position-relative">
+                                        <div class="badge position-absolute">
+                                            3 фото
+                                        </div>
+                                        <a href="#">
+                                            <img src="./images/car-3.png" class="card-img-top" alt="Car Eight">
+                                        </a>
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title mb-3"><a href="#">Бронирование автомобиля
+                                                пленкой Illumar</a></h5>
+
+                                        <a href="" class="d-flex justify-content-between"><span>Подробнее об
+                                                услуге</span> <i class="bi bi-chevron-right"></i></a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider-btn-2 d-md-none">
+                            <div class="swiper-button-next bg-white shadow rounded-circle"
+                                style="width: 40px; height: 40px;"></div>
+                            <div class="swiper-button-prev bg-white shadow rounded-circle"
+                                style="width: 40px; height: 40px;"></div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <!-- <div class="col-xl-3 col-lg-4 col-md-6 mt-3">
+                    <div class="card border-0 bg-transparent">
+                        <div class="card-header bg-transparent border-0 position-relative">
+                            <div class="badge position-absolute">
+                                3 фото
+                            </div>
+                            <a href="#">
+                                <img src="./images/car-1.png" class="card-img-top" alt="Car One">
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title mb-3"><a href="#">Бронирование автомобиля
+                                    пленкой Illumar</a></h5>
+
+                            <a href="" class="d-flex justify-content-between"><span>Подробнее об услуге</span> <i
+                                    class="bi bi-chevron-right"></i></a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 mt-3">
+                    <div class="card border-0 bg-transparent">
+                        <div class="card-header bg-transparent border-0 position-relative">
+                            <div class="badge position-absolute">
+                                3 фото
+                            </div>
+                            <a href="#"><img src="./images/car-2.png" class="card-img-top" alt="Car Two"></a>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title mb-3"><a href="#">Бронирование автомобиля
+                                    пленкой Illumar</a></h5>
+
+                            <a href="" class="d-flex justify-content-between"><span>Подробнее об услуге</span> <i
+                                    class="bi bi-chevron-right"></i></a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 mt-3">
+                    <div class="card border-0 bg-transparent">
+                        <div class="card-header bg-transparent border-0 position-relative">
+                            <div class="badge position-absolute">
+                                3 фото
+                            </div>
+                            <a href="#"><img src="./images/car-3.png" class="card-img-top" alt="Car Three"></a>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title mb-3"><a href="#">Бронирование автомобиля
+                                    пленкой Illumar</a></h5>
+
+                            <a href="" class="d-flex justify-content-between"><span>Подробнее об услуге</span> <i
+                                    class="bi bi-chevron-right"></i></a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 mt-3">
+                    <div class="card border-0 bg-transparent">
+                        <div class="card-header bg-transparent border-0 position-relative">
+                            <div class="badge position-absolute">
+                                3 фото
+                            </div>
+                            <a href="#"><img src="./images/car-4.png" class="card-img-top" alt="Car Four"></a>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title mb-3"><a href="#">Бронирование автомобиля
+                                    пленкой Illumar</a></h5>
+
+                            <a href="" class="d-flex justify-content-between"><span>Подробнее об услуге</span> <i
+                                    class="bi bi-chevron-right"></i></a>
+
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+        <div class="bottom container py-4 px-5 mt-3">
+            <div class="row align-items-center">
+                <div class="col-xl-3 col-lg-4 col-md-6"><span>Присоединяйтесь к нам в социальных сетях:</span></div>
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="card border-0 mt-3 mt-md-0 ">
+                        <div class="card-body text-center">
+                            <a href="#" id="brandIcon"><i class="fa-brands fa-vk fs-5"></i> <span>ВКонтакте</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="card border-0 mt-3 mt-md-0">
+                        <div class="card-body text-center">
+                            <a href="#"><i class="bi bi-instagram"></i> <span>Instagram</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="card border-0 mt-3 mt-xl-0">
+                        <div class="card-body text-center">
+                            <a href="#" id="youtubeIcon"><i class="fa-brands fa-youtube fs-5"></i>
+                                <span>YouTube</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Blog Section End -->
+    <!-- Footer Section Start -->
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 d-flex flex-column align-content-between">
+                    <div class="text-center text-sm-start mb-3">
+                        <h2 class="fs-1 mb-4">Почему UCT?</h2>
+                        <p class="lead" style="font-weight: 400;">UCT — это гарантия не только качества, но и стиля!
+                            Доверь свой автомобиль профессионалам!</p>
+                    </div>
+                    <div class="btn-box mt-auto mb-4 text-center text-sm-start">
+                        <a href="#" class="custom-btn btn-1 mb-2 mb-sm-0 me-2">Запись в сервис</a>
+                        <a href="#" class="custom-btn btn-2">Консультация</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 offset-lg-1 mt-4 mt-lg-0">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card bg-transparent border-0 text-center text-sm-start">
+                                <div class="card-body">
+                                    <div class="img mb-4">
+                                        <img src="./images/f1.png" alt="Car Wash">
+                                    </div>
+                                    <h5 class="mb-3">ОБОРУДОВАНИЕ</h5>
+                                    <p class="mb-0">Автомойка на 2 поста и лучшее итальянское оборудование</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card bg-transparent border-0 text-center text-sm-start">
+                                <div class="card-body">
+                                    <div class="img mb-4">
+                                        <img src="./images/f2.png" alt="Car Wash">
+                                    </div>
+                                    <h5 class="mb-3">ПОДЪЕМНИКИ</h5>
+                                    <p class="mb-0">Рассчитаны на 3,5 и 5 тонн. Поднимем любую машину!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card bg-transparent border-0 text-center text-sm-start">
+                                <div class="card-body">
+                                    <div class="img mb-4">
+                                        <img src="./images/f3.png" alt="Car Wash">
+                                    </div>
+                                    <h5 class="mb-3">ЦЕНЫ</h5>
+                                    <p class="mb-0">Лучшие цены и качество на рынке. Довольным будет каждый!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card bg-transparent border-0 text-center text-sm-start">
+                                <div class="card-body">
+                                    <div class="img mb-4">
+                                        <img src="./images/f4.png" alt="Car Wash">
+                                    </div>
+                                    <h5 class="mb-3">ПОКРАСКА</h5>
+                                    <p class="mb-0">Покрасочная камера Spanesi и магнитный стапель.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+    <!-- Font Awesome JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"
+        integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- Custom JS -->
+    <script type="module" src="./js/main.js"></script>
+
+</body>
+
+</html>

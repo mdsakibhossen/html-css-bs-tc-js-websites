@@ -1,0 +1,383 @@
+/* font-family: 'Manrope', sans-serif; */
+/* background: #5C5C5C; */
+/* Common CSS Start */
+:root {
+    --primary-color: #FF001D;
+    --body-color: #141414;
+    --dark-color: #1E1E1E;
+    --light-color-1: #FFFFFF;
+    --light-color-2: #F5F5F5;
+    --text-color: #282828;
+    --br-1: 1.5rem;
+    --br-2: .5rem;
+    --transition: all .3s ease;
+}
+
+
+html {
+    scroll-behavior: smooth;
+    font-family: 'Manrope', sans-serif;
+}
+
+body {
+    background-color: var(--body-color);
+    padding: 2rem 1.5rem;
+    color: var(--text-color);
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.custom-btn {
+    display: inline-block;
+    background-color: var(--primary-color);
+    border-radius: var(--br-2);
+    padding: .3rem .8rem;
+    color: var(--light-color-1);
+    border: none;
+    outline: none;
+}
+
+.badge {
+    border-radius: var(--br-1);
+    padding: .4rem .8rem;
+    transition: var(--transition);
+    font-weight: 300;
+    color: var(--light-color-1);
+}
+
+/* Common CSS End */
+/* Header Section Start */
+#mainHeader {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(../images/bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: var(--br-1);
+}
+
+#mainHeader .nav-container {
+    border-bottom: 2px solid #282828;
+}
+
+#mainHeader .navbar-nav .nav-item a.nav-link {
+    color: var(--light-color-1);
+    transition: var(--transition);
+}
+
+#mainHeader .navbar-nav .nav-item a.nav-link:hover {
+    color: var(--primary-color);
+}
+
+#mainHeader .navbar-nav .nav-item {
+    margin-right: 2.5rem;
+}
+
+
+
+#mainHeader .navbar-nav .nav-item:last-child {
+    margin-right: 0;
+}
+
+#mainHeader .header-content {
+    padding: 5rem 0;
+}
+
+#mainHeader .header-content h1 {
+    color: var(--light-color-1);
+    font-size: 2.3rem;
+    margin-bottom: 1.5rem;
+}
+
+
+#mainHeader .header-content a.custom-btn {
+    padding: .65rem 2.5rem;
+    margin-right: 1rem;
+    transition: var(--transition);
+    border: 2px solid transparent;
+}
+
+
+#mainHeader .header-content a.custom-btn.btn-2, #mainHeader .header-content a.custom-btn.btn-1:hover {
+    background-color: transparent;
+    border: 2px solid #FFFFFF33;
+    color: var(--light-color-1);
+}
+
+#mainHeader .header-content a.custom-btn.btn-2:hover {
+    background-color: var(--primary-color);
+    border: 2px solid transparent;
+}
+
+/* Header Section End */
+/* Price Section Start */
+#price .card {
+    background-color: var(--dark-color);
+    color: var(--light-color-1);
+    border-radius: var(--br-1);
+    min-height: 15rem;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+#price .card:hover {
+    background-color: var(--primary-color);
+}
+
+#price .card::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-image: url(../images/1.png);
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 50px;
+    z-index: -1;
+    transition: var(--transition);
+}
+
+#price .card:hover::before {
+    left: 0;
+}
+
+#price .card1::before {
+    background-image: url(../images/1.png);
+}
+
+#price .card2::before {
+    background-image: url(../images/2.png);
+}
+
+#price .card3::before {
+    background-image: url(../images/3.png);
+}
+
+#price .card4::before {
+    background-image: url(../images/4.png);
+}
+
+#price .card5::before {
+    background-image: url(../images/5.png);
+}
+
+#price .card6::before {
+    background-image: url(../images/6.png);
+}
+
+#price .card .badge {
+    position: absolute;
+    top: 2rem;
+    right: 2.5rem;
+    background-color: var(--primary-color);
+
+}
+
+#price .card:hover .badge {
+    background-color: var(--dark-color);
+}
+
+#price .card .card-body h3, #price .card .card-body p {
+    font-weight: 300;
+}
+
+
+/* Price Section End */
+/* Blog Section Start */
+#blog {
+    background-color: var(--light-color-1);
+    border-radius: var(--br-1);
+    position: relative;
+}
+
+#blog .slider-btn {
+    position: absolute;
+    top: 5rem;
+    right: 2.5rem;
+    display: none;
+}
+
+#blog .slider-btn button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    display: inline-block;
+}
+
+#blog .slider-btn button:first-child {
+    margin-right: 4rem;
+}
+
+#blog .swiper-button-next:after, #blog .swiper-button-prev:after {
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: var(--primary-color);
+}
+
+#blog h2 {
+    font-size: 2rem;
+    margin: 1rem 0 1.5rem;
+}
+
+
+#blog .card a {
+    font-weight: 600;
+    transition: var(--transition);
+    color: var(--dark-color);
+}
+
+#blog .card:hover h5 a {
+    color: var(--primary-color);
+}
+
+#blog .card .card-header .badge {
+    top: 2rem;
+    right: 2.5rem;
+    background-color: var(--dark-color);
+}
+
+#blog .bottom {
+    background-color: var(--light-color-2);
+    border-radius: var(--br-1);
+}
+
+#blog .bottom .card {
+    border-radius: .8rem;
+}
+
+#blog .bottom a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .3rem;
+    transition: var(--transition);
+}
+
+#blog .bottom span {
+    font-weight: 600;
+}
+
+#blog .bottom a#brandIcon:hover span {
+    color: #0077FF;
+}
+
+#blog .bottom a#youtubeIcon:hover span {
+    color: #FF0302;
+}
+
+#blog .bottom #brandIcon path {
+    color: #0077FF;
+}
+
+
+#blog .bottom #youtubeIcon path {
+    color: #FF0302;
+}
+
+
+/* Blog Section End */
+/* Footer Section Start */
+#footer {
+    background-color: var(--primary-color);
+    border-radius: var(--br-1);
+    color: var(--light-color-1);
+    padding: 3rem 0;
+}
+
+#footer .btn-box a.custom-btn.btn-1 {
+    background-color: var(--light-color-1);
+    color: var(--body-color);
+    padding: .5rem 2rem;
+    border: 2px solid #FFFFFF80;
+    transition: var(--transition);
+}
+
+#footer .btn-box a.custom-btn.btn-1:hover {
+    background-color: transparent;
+    color: var(--light-color-1);
+}
+
+#footer .btn-box a.custom-btn.btn-2 {
+    background-color: transparent;
+    color: var(--light-color-1);
+    border: 2px solid #FFFFFF80;
+    padding: .5rem 2rem;
+    transition: var(--transition);
+}
+
+#footer .btn-box a.custom-btn.btn-2:hover {
+    background-color: var(--light-color-1);
+    color: var(--body-color);
+}
+
+/* Footer Section End */
+/* Media Queries Start */
+@media screen and (min-width:576px) {
+    /* Header Section Start */
+
+    #mainHeader .header-content h1 {
+        font-size: 3.5rem;
+    }
+
+    /* Header Section End */
+
+    /* Blog Section Start */
+
+    #blog h2 {
+        font-size: 3rem;
+        margin-bottom: 1.5rem;
+    }
+
+    /* Blog Section End */
+
+}
+
+@media screen and (min-width: 768px) {
+
+    /* Blog Section Start */
+    #blog .slider-btn {
+        display: block;
+    }
+
+    /* Blog Section End */
+}
+
+
+
+/* Media Queries End */
+
+
+#blog .swiper {
+    width: 100%;
+    height: 100%;
+}
+
+#blog .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#blog .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#blog .swiper-button-next:after, #blog .swiper-button-prev:after {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
