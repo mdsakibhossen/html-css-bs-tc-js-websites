@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./media/images/favicon.png" type="image/x-icon">
+    <title>About US | E-Shop</title>
+    <!-- Google Fonts CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/about.css" />
+    <link rel="stylesheet" href="./css/media-queries.css" />
+</head>
+
+<body>
+    <!-- Header Section Start -->
+    <header id="header">
+        <div class="container header__container flex justify-between items-center">
+            <!-- Logo -->
+            <div class="logo-box">
+                <a href="/" class="logo"><span class="text-primary">E</span><span class="">Shop</span></a>
+            </div>
+            <!-- Nav -->
+            <div class="nav-wrapper">
+                <nav class="flex gap-2">
+                    <a href="/" class="active">Home</a>
+                    <a href="products.html">Products</a>
+                    <a href="about.html">About US</a>
+                    <a href="contact.html">Contact US</a>
+
+                    <!-- Menu Closing Button -->
+                    <button id="menuCloseBtn">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </nav>
+            </div>
+            <!-- Menu Opening Button & Cart Button -->
+            <div class="flex gap-1 items-center">
+                <!-- Menu Opening Button -->
+                <button id="menuOpenBtn">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <!-- Cart Button -->
+                <a href="cart.html" id="cartIconBtn">
+                    <span class="icon"><i class="fa-solid fa-cart-shopping"></i></span>
+                    <span id="cartsNumber">0</span>
+                </a>
+            </div>
+        </div>
+    </header>
+    <!-- Header Section End -->
+
+
+    <!-- Hero Section Start -->
+    <section id="heroAbout">
+        <div class="container hero__container">
+            <h1 class="heading-1">About US</h1>
+        </div>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- Why Section Start -->
+    <section id="why">
+        <div class="container why__container" style="margin-top:5rem">
+            <div id="whyContainer">
+                <div class="card">
+                    <div class="icon"><i class="fa-solid fa-truck-fast"></i></div>
+                    <h3 class="heading-3">Fast Delivery</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+                </div>
+                <div class="card">
+                    <div class="icon"><i class="fa-solid fa-handshake-simple"></i></div>
+                    <h3 class="heading-3">Free Shipping</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+                </div>
+                <div class="card">
+                    <div class="icon"><i class="fa-solid fa-ranking-star"></i></div>
+                    <h3 class="heading-3">Best Quality</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Why Section End -->
+
+
+
+
+    <!-- Client Review Section Start -->
+    <section id="clientReview">
+        <h2 class="heading-2">Our Happy Client Says</h2>
+        <div class="container review__container">
+
+            <div class="swiper mySwiper">
+                <div class="cards swiper-wrapper">
+                    <div class="card swiper-slide">
+                        <div class="client">
+                            <div class="img">
+                                <img src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                    alt="">
+                            </div>
+                            <div class="info">
+                                <h4>Neo Gene</h4>
+                                <p>Digital Marketer</p>
+                            </div>
+                        </div>
+                        <div class="comment paragraph">
+                            “Amazing food and super fast delivery! The burgers are always fresh and packed with flavor.
+                            The fries are
+                            perfectly
+                            crispy. Highly recommend this place for a quick and delicious meal!”
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="client">
+                            <div class="img">
+                                <img src="https://images.pexels.com/photos/428364/pexels-photo-428364.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                    alt="">
+                            </div>
+                            <div class="info">
+                                <h4>Spencer Selover</h4>
+                                <p>CEO &amp; Co-Founder</p>
+                            </div>
+                        </div>
+                        <div class="comment paragraph">
+                            “Amazing food and super fast delivery! The burgers are always fresh and packed with flavor.
+                            The fries are
+                            perfectly
+                            crispy. Highly recommend this place for a quick and delicious meal!”
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="client">
+                            <div class="img">
+                                <img src="https://images.pexels.com/photos/1043471/pexels-photo-1043471.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                    alt="">
+                            </div>
+                            <div class="info">
+                                <h4>Mac Chloe</h4>
+                                <p>Co-Founder</p>
+                            </div>
+                        </div>
+                        <div class="comment paragraph">
+                            “Amazing food and super fast delivery! The burgers are always fresh and packed with flavor.
+                            The fries are
+                            perfectly
+                            crispy. Highly recommend this place for a quick and delicious meal!”
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Client Review Section End -->
+
+
+
+    <!-- Footer Section Start -->
+    <footer id="footer">
+        <div class="container footer__container">
+            <div class="about-us">
+                <h3 class="heading-3">About US</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doLorem ipsum dolor sit amet,
+                    consectetur
+                    adipiscing elit,
+                    sed doLorem ipsum dolor sit amet,</p>
+                <div class="social-icons flex justify-center gap-2">
+                    <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="newsletter">
+                <h3 class="heading-3">Newsletter</h3>
+                <input type="email" placeholder="Enter Your Email" id="newsletterEmail">
+                <small id="newsletterMsg" style="display:block;"></small>
+                <button class="btn" id="subscribeBtn">Subscribe</button>
+            </div>
+            <div class="need-help">
+                <h3 class="heading-3">Need Help</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doLorem ipsum dolor sit amet,
+                    consectetur
+                    adipiscing
+                    elit,
+                    sed doLorem ipsum dolor sit amet,</p>
+            </div>
+            <div class="contact-us">
+                <h3 class="heading-3">Contact Us</h3>
+                <p>
+                <address><span class="icon"><i class="fa-solid fa-location-dot"></i></span> <span>Gb road 123 london
+                        Uk</span>
+                    <br>
+                    <span class="icon"><i class="fa-solid fa-square-phone"></i></span> <a
+                        href="tel:+8800000000">+8800000000</a>
+                    <br>
+                    <span class="icon"><i class="fa-solid fa-envelope"></i></span> <a
+                        href="mailto:mail@gmail.com">mail@gmail.com</a>
+                </address>
+                </p>
+            </div>
+
+        </div>
+        <div class="container bottom-footer">
+            <hr>
+            <p>&copy; 2024 All Rights Reserved. By HTML Design</p>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Font Awesome JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js"
+        integrity="sha512-6sSYJqDreZRZGkJ3b+YfdhB3MzmuP9R7X1QZ6g5aIXhRvR1Y/N/P47jmnkENm7YL3oqsmI6AK+V6AD99uWDnIw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Custom JS -->
+    <script type="module" src="./js/main.js"></script>
+    <script type="module" src="./js/about.js"></script>
+</body>
+
+</html>

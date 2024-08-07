@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./media/images/favicon.png" type="image/x-icon">
+    <title>Cart | E-Shop</title>
+    <!-- Google Fonts CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/cart.css" />
+    <link rel="stylesheet" href="./css/media-queries.css" />
+</head>
+
+<body>
+    <!-- Header Section Start -->
+    <header id="header">
+        <div class="container header__container flex justify-between items-center">
+            <!-- Logo -->
+            <div class="logo-box">
+                <a href="/" class="logo"><span class="text-primary">E</span><span class="">Shop</span></a>
+            </div>
+            <!-- Nav -->
+            <div class="nav-wrapper">
+                <nav class="flex gap-2">
+                    <a href="/" class="active">Home</a>
+                    <a href="products.html">Products</a>
+                    <a href="about.html">About US</a>
+                    <a href="contact.html">Contact US</a>
+
+                    <!-- Menu Closing Button -->
+                    <button id="menuCloseBtn">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </nav>
+            </div>
+            <!-- Menu Opening Button & Cart Button -->
+            <div class="flex gap-1 items-center">
+                <!-- Menu Opening Button -->
+                <button id="menuOpenBtn">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <!-- Cart Button -->
+                <button id="cartIconBtn">
+                    <span class="icon"><i class="fa-solid fa-cart-shopping"></i></span>
+                    <span id="cartsNumber">0</span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <!-- Header Section End -->
+
+    <!-- Cart Section Start -->
+    <section id="cart">
+        <div class="container cart__container">
+            <div id="cartTable">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Image</th>
+                            <th>Info</th>
+                            <th>Quantity</th>
+                            <th>Price</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="cartContainer"></tbody>
+                </table>
+            </div>
+            <h2 id="noProductsMsg" style="text-align: center;">No Products Are Available!!!</h2>
+        </div>
+
+    </section>
+    <!-- Cart Section End -->
+
+    <!-- Cart Template Section Card Start -->
+    <template id="cartTemplate">
+        <tr class="cart">
+            <td>
+                <img id="img" src="./media/images/1.jpg" alt="" />
+            </td>
+            <td>
+                <span id="title" class="heading-3">rrrrr</span> <br />
+                <span id="description">eeeeeeee</span>
+            </td>
+            <td>
+                <span class="quantity-btn">
+                    <button class="increase-quantity-btn">&plus;</button>
+                    <span id="quantity">1</span>
+                    <button class="decrease-quantity-btn">&minus;</button>
+                </span>
+            </td>
+            <td>
+                <span id="price">999</span>
+            </td>
+            <td>
+                <button class="remove-btn" style="font-size: 1.2rem">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </td>
+        </tr>
+    </template>
+    <!-- Cart Template Section Card End -->
+    <!-- Cart CheckOut Section Start -->
+
+    <section id="checkout">
+        <div class="container checkout__container">
+            <div class="checkout-box">
+                <div class="row">
+                    <span>Sub-Total:</span>
+                    <span id="subTotal">000</span>
+                </div>
+                <div class="row">
+                    <span>Shipping:</span>
+                    <span id="shipping">000</span>
+                </div>
+                <div class="row">
+                    <span>Tax:</span>
+                    <span id="tax">000</span>
+                </div>
+                <hr />
+                <div class="row">
+                    <span>Total:</span>
+                    <span id="total">000</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Cart CheckOut Section End -->
+
+    <!-- Toast Message Section Start -->
+    <div id="toastMsgContainer"></div>
+    <!-- Toast Message Section End -->
+    <!-- Font Awesome JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js"
+        integrity="sha512-6sSYJqDreZRZGkJ3b+YfdhB3MzmuP9R7X1QZ6g5aIXhRvR1Y/N/P47jmnkENm7YL3oqsmI6AK+V6AD99uWDnIw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Custom JS -->
+    <script type="module" src="./js/main.js"></script>
+    <script type="module" src="./js/cart.js"></script>
+</body>
+
+</html>

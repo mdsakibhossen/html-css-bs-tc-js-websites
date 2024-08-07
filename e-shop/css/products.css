@@ -1,0 +1,54 @@
+/* Hero Section Start */
+#heroProducts {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.5), transparent), url("https://images.pexels.com/photos/7203788/pexels-photo-7203788.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    height: 60vh;
+}
+
+#heroProducts .hero__container {
+    height: 100%;
+    display: flex;
+    align-items: end;
+}
+
+.hero__container h1 {
+    color: var(--white);
+    margin-bottom: 2rem;
+}
+
+/* Hero Section End */
+
+
+
+
+/* All Products Section Start */
+#categoriesContainer {
+    margin-bottom: 1.75rem;
+}
+
+#categoriesContainer button {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+#categoriesContainer button.active {
+    padding: .15rem .75rem;
+    background-color: var(--primary-color);
+    color: var(--white);
+    border-radius: 3px;
+    font-weight: 500;
+}
+
+/* All Products Section End */
+
+
+/* Banner Section Start */
+#productsBanner {
+    padding-bottom: 5rem;
+}
+
+ .banner__container {
+    background-color: rgba(57, 57, 246, 0.695);
+}
+
+
+/* Banner Section End */

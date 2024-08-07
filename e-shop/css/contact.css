@@ -1,0 +1,121 @@
+/* Hero Section Start */
+#heroContact {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.5), transparent), url("../media/images/3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
+}
+
+#heroContact .hero__container {
+    height: 100%;
+    display: flex;
+    align-items: end;
+}
+
+.hero__container h1 {
+    color: var(--white);
+    margin-bottom: 2rem;
+    padding-left: .5rem;
+}
+
+/* Hero Section End */
+
+
+/* Contact Section Start */
+#contactUs {
+    padding: 5rem 0;
+}
+
+.contact__container h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.contact__container .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.contact__container .content>* {
+    flex: 1;
+    width: 100%;
+}
+
+.contact__container .content .form form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+}
+
+.contact__container .content .form .single-field {
+    position: relative;
+    border: green;
+}
+
+.contact__container .content .form .single-field input, textarea {
+    outline: 2px solid #ddd;
+    padding: .75rem;
+    border-radius: 3px;
+    position: relative;
+    resize: none;
+}
+
+.contact__container .content .form .single-field input:focus, .contact__container .content .form .single-field textarea:focus {
+    outline-color: var(--primary-color);
+    transition: var(--transition);
+    display: inline-block;
+
+}
+
+.contact__container .content .form .single-field input+label, .contact__container .content .form .single-field textarea+label {
+    position: absolute;
+    top: 50%;
+    left: .5rem;
+    transform: translateY(-50%);
+    background-color: transparent;
+    padding: 0 .5rem;
+    border-radius: 2px;
+    border: 1px solid transparent;
+    transition: var(--transition);
+    pointer-events: none;
+}
+
+.contact__container .content .form .single-field textarea+label {
+    top: 20%;
+}
+
+
+
+.contact__container .content .form .single-field input:valid~label, .contact__container .content .form .single-field textarea:valid~label {
+    top: 0;
+    transform: translateY(-50%);
+    background-color: white;
+    border-color: #ddd;
+}
+
+.contact__container .content .form .single-field input:focus~label, .contact__container .content .form .single-field textarea:focus~label {
+    top: 0;
+    transform: translateY(-50%);
+    background-color: white;
+    border-color: var(--primary-color);
+}
+
+
+/* Contact Section End */
+
+@media screen and (min-width: 1024px) {
+
+    /* Contact Section Start */
+
+
+    .contact__container .content {
+        flex-direction: row;
+    }
+
+    /* Contact Section End */
+
+}

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="./media/images/favicon.png" type="image/x-icon">
+  <title>Home | E-Shop</title>
+  <!-- Google Fonts CSS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/media-queries.css" />
+
+</head>
+
+<body>
+  <!-- Header Section Start -->
+  <header id="header">
+    <div class="container header__container flex justify-between items-center">
+      <!-- Logo -->
+      <div class="logo-box">
+        <a href="/" class="logo"><span class="text-primary">E</span><span class="">Shop</span></a>
+      </div>
+      <!-- Nav -->
+      <div class="nav-wrapper">
+        <nav class="flex gap-2">
+          <a href="/" class="active">Home</a>
+          <a href="products.html">Products</a>
+          <a href="about.html">About Us</a>
+          <a href="contact.html">Contact Us</a>
+
+          <!-- Menu Closing Button -->
+          <button id="menuCloseBtn">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </nav>
+      </div>
+      <!-- Menu Opening Button & Cart Button -->
+      <div class="flex gap-1 items-center">
+        <!-- Menu Opening Button -->
+        <button id="menuOpenBtn">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <!-- Cart Button -->
+        <a href="cart.html" id="cartIconBtn">
+          <span class="icon"><i class="fa-solid fa-cart-shopping"></i></span>
+          <span id="cartsNumber">0</span>
+        </a>
+      </div>
+    </div>
+  </header>
+  <!-- Header Section End -->
+
+  <!-- Hero Section Start -->
+  <section id="hero">
+    <div class="container hero__container">
+      <div class="hero__content flex justify-center items-center flex-column gap-2">
+        <h1>
+          Welcome to <span class="text-primary">EShop</span> <br />
+          Your One-Stop Online Store for All Your Needs
+        </h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis,
+          ratione. Lorem ipsum dolor sit amet consectetur.
+        </p>
+        <a href="contact.html" class="btn">Contact US</a>
+      </div>
+    </div>
+  </section>
+  <!-- Hero Section End -->
+
+
+  <!-- Latest Product Section Start -->
+  <section id="latestProducts">
+    <div class="container products__container">
+      <h2 class="heading-2">Latest Products</h2>
+      <div id="productsContainer"></div>
+      <div class="btn-box flex justify-center">
+        <a href="products.html" class="btn">View All Products</a>
+      </div>
+    </div>
+  </section>
+  <!-- Latest Product Section End -->
+
+  <!-- Latest Product Section Template Card Start -->
+  <template id="productCardTemplate">
+    <div class="card flex flex-column gap-1">
+      <div class="img-box">
+        <img id="img" src="" alt="" />
+      </div>
+      <div class="info flex flex-column gap-1">
+        <h3 id="title" class="heading-3"></h3>
+        <p id="description"></p>
+        <h4 id="price" style="font-size: 1.35rem;"></h4>
+      </div>
+      <div class="btn-box">
+        <button class="btn">Add To Card</button>
+      </div>
+    </div>
+  </template>
+
+  <!-- Latest Product Section Template Card End -->
+
+
+  <!-- Banner Section Start -->
+  <section id="banner">
+    <div class="container banner__container">
+      <div class="img">
+        <img src="./media/images/2.png" alt="">
+      </div>
+      <div class="text">
+        <h2 class="heading-2">Best Savings on <br>
+          new arrivals</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi placeat assumenda soluta corrupti culpa
+          omnis animi? Voluptatum pariatur voluptas consequuntur?</p>
+        <a href="products.html" class="btn">Buy Now</a>
+      </div>
+    </div>
+  </section>
+  <!-- Banner Section End -->
+
+  <!-- Why Section Start -->
+  <section id="why">
+    <div class="container why__container">
+      <h2 class="heading-2">Why Shop with US</h2>
+      <div id="whyContainer">
+        <div class="card">
+          <div class="icon"><i class="fa-solid fa-truck-fast"></i></div>
+          <h3 class="heading-3">Fast Delivery</h3>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+        </div>
+        <div class="card">
+          <div class="icon"><i class="fa-solid fa-handshake-simple"></i></div>
+          <h3 class="heading-3">Free Shipping</h3>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+        </div>
+        <div class="card">
+          <div class="icon"><i class="fa-solid fa-ranking-star"></i></div>
+          <h3 class="heading-3">Best Quality</h3>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Why Section End -->
+
+  <!-- Toast Message Section Start -->
+  <div id="toastMsgContainer"></div>
+  <!-- Toast Message Section End -->
+
+  <!-- Footer Section Start -->
+  <footer id="footer">
+    <div class="container footer__container">
+      <div class="about-us">
+        <h3 class="heading-3">About US</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doLorem ipsum dolor sit amet, consectetur
+          adipiscing elit,
+          sed doLorem ipsum dolor sit amet,</p>
+        <div class="social-icons flex justify-center gap-2">
+          <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+      </div>
+      <div class="newsletter">
+        <h3 class="heading-3">Newsletter</h3>
+        <input type="email" placeholder="Enter Your Email" id="newsletterEmail">
+        <small id="newsletterMsg" style="display:block;"></small>
+        <button class="btn" id="subscribeBtn">Subscribe</button>
+      </div>
+      <div class="need-help">
+        <h3 class="heading-3">Need Help</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doLorem ipsum dolor sit amet, consectetur
+          adipiscing
+          elit,
+          sed doLorem ipsum dolor sit amet,</p>
+      </div>
+      <div class="contact-us">
+        <h3 class="heading-3">Contact Us</h3>
+        <p>
+        <address><span class="icon"><i class="fa-solid fa-location-dot"></i></span> <span>Gb road 123 london Uk</span>
+          <br>
+          <span class="icon"><i class="fa-solid fa-square-phone"></i></span> <a href="tel:+8800000000">+8800000000</a>
+          <br>
+          <span class="icon"><i class="fa-solid fa-envelope"></i></span> <a
+            href="mailto:mail@gmail.com">mail@gmail.com</a>
+        </address>
+        </p>
+      </div>
+
+    </div>
+    <div class="container bottom-footer">
+      <hr>
+      <p>&copy; 2024 All Rights Reserved. By HTML Design</p>
+    </div>
+  </footer>
+  <!-- Footer Section End -->
+
+  <!-- Font Awesome JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js"
+    integrity="sha512-6sSYJqDreZRZGkJ3b+YfdhB3MzmuP9R7X1QZ6g5aIXhRvR1Y/N/P47jmnkENm7YL3oqsmI6AK+V6AD99uWDnIw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- Custom JS -->
+  <script type="module" src="./js/main.js"></script>
+  <script type="module" src="./js/home.js"></script>
+</body>
+
+</html>
