@@ -1,6 +1,5 @@
 // Declaration of Variables
 export const DOMAIN_NAME = `${window.location.protocol}//${window.location.host}`;
-console.log(DOMAIN_NAME);
 export const navWrapper = document.querySelector(".nav-wrapper");
 export const navLinks = document.querySelectorAll("nav a");
 export const menuOpenBtn = document.querySelector("#menuOpenBtn");
