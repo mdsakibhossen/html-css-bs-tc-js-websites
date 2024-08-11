@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart | Fast Food Hut</title>
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon" />
+    <!-- Google Font CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/cart.css" />
+  </head>
+
+  <body>
+    <!-- Header Section Start -->
+    <header id="header">
+      <div class="wrapper">
+        <div class="container header__container">
+          <!-- Logo -->
+          <div class="logo">
+            <a href="/">
+              <img src="./images/logo.png" alt="Logo" />
+            </a>
+          </div>
+          <!-- Nav -->
+          <nav>
+            <a href="/">Home</a>
+            <a href="cart.html"
+              ><span class="cart-icon">
+                Cart<small class="cart-count"></small>
+              </span>
+            </a>
+          </nav>
+          <!-- Search Box -->
+          <div class="search-box">
+            <div class="icon search-icon">
+              <button id="searchBtn">
+                <span id="searchIcon">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </span>
+                <span id="searchClose">
+                  <i class="fa-solid fa-xmark"></i>
+                </span>
+              </button>
+            </div>
+            <input
+              type="search"
+              name="search"
+              id="search"
+              placeholder="Search"
+            />
+            <a href="cart.html" class="icon cart-icon">
+              <small class="cart-count">0</small>
+              <i class="fa-solid fa-cart-plus"></i>
+            </a>
+          </div>
+          <!-- Menu Button -->
+          <button id="menuBtn">
+            <span class="bar">
+              <i class="fa-solid fa-bars"></i>
+            </span>
+            <span class="close">
+              <i class="fa-solid fa-xmark"></i>
+            </span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- Header Section End -->
+
+    <!-- Cart Items Section Start -->
+    <section id="cart">
+      <div class="sec-header">
+        <h2 class="title">Your Cart</h2>
+      </div>
+      <div class="container cart-items__container">
+        <div class="cart-box">
+          <table>
+            <thead>
+              <tr>
+                <th>Image</th>
+                <th>Title</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Sub Total</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody id="cartsContainer"></tbody>
+            <tfoot>
+              <tr>
+                <td colspan="6">
+                  <strong>Total Price: </strong><span id="totalPrice"></span>
+                </td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+        <div class="btn-box cart-items__btn-box">
+          <button id="cartClearBtn" class="btn">Clear Cart</button>
+        </div>
+
+        <h2 class="no-product-msg">No Products are Available</h2>
+      </div>
+    </section>
+    <!-- Cart Items Section End -->
+
+    <!-- Cart Item Template Section Start -->
+    <template id="cartTemplate">
+      <tr class="cart-row">
+        <td><img class="img" src="" alt="" /></td>
+        <td class="title"></td>
+        <td class="price"></td>
+        <td>
+          <div class="quantity-box">
+            <button class="increase-btn">&plus;</button>
+            <span class="quantity"></span>
+            <button class="decrease-btn">&minus;</button>
+          </div>
+        </td>
+        <td class="sub-total"></td>
+        <td class="btn-box">
+          <button class="remove-btn"><i class="fa-solid fa-xmark"></i></button>
+        </td>
+      </tr>
+    </template>
+    <!-- Cart Item Template Section End -->
+
+    <!-- Toast Message Section Start -->
+    <div id="toastMsgContainer"></div>
+    <!-- Toast Message Section End -->
+
+    <!-- Font Awesome JS -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"
+      integrity="sha512-u3fPA7V8qQmhBPNT5quvaXVa1mnnLSXUep5PS1qo5NRzHwG19aHmNJnj1Q8hpA/nBWZtZD4r4AX6YOt5ynLN2g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- Custom JS -->
+    <script type="module" src="./js/script.js"></script>
+    <script type="module" src="./js/cart.js"></script>
+  </body>
+</html>
