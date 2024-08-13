@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Realtor</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <!-- Google Font CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- Remix Icon CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <!-- Header Section Start -->
+    <header id="header" class=" transition-all duration-300 fixed top-0 left-0 z-50 py-8 w-full">
+        <div class="container mx-auto px-3 flex justify-between items-center text-white">
+            <div class="logo flex-[1] text-start">
+                <a href="/">
+                    <img src="./images/logo-1.png" alt="">
+                </a>
+            </div>
+            <div class="nav-wrapper">
+                <div class="nav-and-btns">
+                    <nav class="flex flex-[2] gap-6 justify-center">
+                        <a data-idvalue="hero" href="#hero">Home</a>
+                        <a data-idvalue="featuredProperties" href="#featuredProperties">Properties</a>
+                        <a data-idvalue="about" href="#about">About Us</a>
+                        <a data-idvalue="clientReview" href="#clientReview">Testimonial</a>
+                        <a data-idvalue="contact" href="#contact">Consultation</a>
+                    </nav>
+                    <div class="buttons flex lg:hidden gap-6 flex-[1] justify-center mt-6">
+                        <button id="signIn" class="btn btn-1">
+                            Sign in
+                        </button>
+                        <button id="signUp" class="btn btn-2">
+                            Sign Up
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="buttons hidden lg:flex gap-6 flex-[1] justify-end">
+                <button id="signIn" class="btn btn-1">
+                    Sign in
+                </button>
+                <button id="signUp" class="btn btn-2">
+                    Sign Up
+                </button>
+            </div>
+            <button id="menuBtn" class="w-6 h-5 flex flex-col justify-between lg:hidden">
+                <span class="w-full bg-white h-[15%] rounded-sm transition-all"></span>
+                <span class="w-full bg-white h-[15%] rounded-sm transition-all"></span>
+                <span class="w-full bg-white h-[15%] rounded-sm transition-all"></span>
+            </button>
+        </div>
+    </header>
+    <!-- Header Section End -->
+
+    <!-- Hero Section Start -->
+    <section id="hero" class="h-screen relative">
+        <!-- BG Slider -->
+        <div class="bg swiper mySwiper absolute top-0 left-0">
+            <div class="swiper-wrapper">
+                <div class="w-full h-full swiper-slide">
+                    <img src="./images/1.png" alt="">
+                </div>
+                <div class="w-full h-full swiper-slide">
+                    <img src="./images/1.1.png" alt="">
+                </div>
+                <div class="w-full h-full swiper-slide">
+                    <img src="./images/1.2.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="hero__wrapper relative z-[2]">
+            <div class="container mx-auto px-3 h-full">
+                <div class="content h-full flex flex-col justify-evenly items-center pt-10">
+                    <h1
+                        class="text-white font-noto text-4xl sm:text-5xl lg:text-6xl xl:text-7xl uppercase text-center leading-[3rem] sm:leading-[4rem] lg:leading-[5rem] xl:leading-[6rem]">
+                        find your dream home <br>
+                        with AN expert Realtor</h1>
+
+                    <div
+                        class="search-box flex justify-center w-full max-w-[1000px] flex-col sm:flex-row gap-3 sm:gap-0">
+                        <input type="search" class="w-full outline-none p-3 min-w-[300px]"
+                            placeholder="Search your location here" name="" id="">
+                        <button
+                            class="btn btn-2 p-3 text-white flex justify-center items-center gap-3 w-[180px] mx-auto">
+                            <span class="flex">Search Now</span> <i class="ri-search-2-line"></i>
+                        </button>
+                    </div>
+                </div>
+                <!-- Slider Button -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+    <!-- Hero Section End -->
+
+
+    <!-- Featured Properties Section Start -->
+    <section id="featuredProperties" class="py-20 relative">
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="container mx-auto px-3">
+            <div class="sec-header mb-4 text-center">
+                <h2 class="sec-title lg:text-5xl text-[var(--primary-color)]">
+                    FEATURED PROPERTIES
+                </h2>
+            </div>
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="card w-[90%] md:w-full group cursor-pointer relative min-h-[450px]">
+                            <div class="img h-[250px]">
+                                <div class="swiper mySwiperImg">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img class="w-full h-full"
+                                                src="https://images.pexels.com/photos/186077/pexels-photo-186077.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                                alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img class="w-full h-full"
+                                                src="https://images.pexels.com/photos/1029599/pexels-photo-1029599.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                                alt="">
+                                        </div>
+
+                                        <div class="swiper-slide">
+                                            <img class="w-full h-full"
+                                                src="https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                                alt="">
+                                        </div>
+
+                                    </div>
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-button-prev"></div>
+                                </div>
+                            </div>
+                            <div
+                                class="info w-full bg-white group-hover:bg-[var(--primary-color)]  transition-all duration-300 absolute top-[200px] z-10 top-[-50px] rounded-t-[1.5rem] shadow-xl overflow-hidden p-5 flex flex-col gap-3 h-[215px] group-hover:h-[250px]">
+                                <div class="top-box flex justify-between items-center">
+                                    <div class="badge bg-[#EE574A] text-white px-3 py-1 rounded-sm max-w-max">
+                                        For Sale
+                                    </div>
+                                    <div
+                                        class="price font-bold text-[var(--primary-color)] transition-all group-hover:text-white">
+                                        $579,000
+                                    </div>
+                                </div>
+                                <h3 class="transition-all group-hover:text-white text-start">5110 FL 13th St Ankeny, IA
+                                    50023</h3>
+                                <div class="desc flex justify-between transition-all group-hover:text-white">
+                                    <p>Residential Property</p>
+                                    <p>1,808 Sq. Feet</p>
+                                </div>
+                                <div
+                                    class="bottom-box bg-[#F4F4F4] grid grid-cols-3 justify-center text-center p-1 rounded mt-3">
+                                    <span>5 Beds</span>
+                                    <span>5 Beds</span>
+                                    <span>Kitchen</span>
+                                </div>
+
+                                <div
+                                    class="icons flex justify-evenly text-2xl transition-all w-full group-hover:text-white translate-y-[150%] group-hover:translate-y-[0] delay-300">
+                                    <button>
+                                        <i class="ri-heart-line"></i>
+                                    </button>
+                                    <button>
+                                        <i class="ri-thumb-up-line"></i>
+                                    </button>
+                                    <button>
+                                        <i class="ri-message-2-line"></i>
+                                    </button>
+                                    <button>
+                                        <i class="ri-share-line"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card w-[90%] md:w-full group cursor-pointer relative min-h-[450px]">
+                            <div class="img h-[250px]">
+                                <div class="swiper mySwiperImg">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img class="w-full h-full"
+                                                src="https://images.pexels.com/photos/259588/pexels-photo-259588.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                                alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img class="w-full h-full"
+                                                src="https://images.pexels.com/photos/164558/pexels-photo-164558.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                                alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img class="w-full h-full"
+                                                src="https://images.pexels.com/photos/259685/pexels-photo-259685.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                                alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-button-prev"></div>
+                                </div>
+                            </div>
+                            <div
+                                class="info w-full bg-white group-hover:bg-[var(--primary-color)]  transition-all duration-300 absolute top-[200px] z-10 top-[-50px] rounded-t-[1.5rem] shadow-xl overflow-hidden p-5 flex flex-col gap-3 h-[215px] group-hover:h-[250px]">
+                                <div class="top-box flex justify-between items-center">
+                                    <div class="badge bg-[#EE574A] text-white px-3 py-1 rounded-sm max-w-max">
+                                        For Sale
+                                    </div>
+                                    <div
+                                        class="price font-bold text-[var(--primary-color)] transition-all group-hover:text-white">
+                                        $579,000
+                                    </div>
+                                </div>
+                                <h3 class="transition-all group-hover:text-white text-start">5110 FL 13th St Ankeny, IA
+                                    50023</h3>
+                                <div class="desc flex justify-between transition-all group-hover:text-white">
+                                    <p>Residential Property</p>
+                                    <p>1,808 Sq. Feet</p>
+                                </div>
+                                <div
+                                    class="bottom-box bg-[#F4F4F4] grid grid-cols-3 justify-center text-center p-1 rounded mt-3">
+                                    <span>5 Beds</span>
+                                    <span>5 Beds</span>
+                                    <span>Kitchen</span>
+                                </div>
+
+                                <div
+                                    class="icons flex justify-evenly text-2xl transition-all w-full group-hover:text-white translate-y-[150%] group-hover:translate-y-[0] delay-300">
+                                    <button>
+                                        <i class="ri-heart-line"></i>
+                                    </button>
+                                    <button>
+                                        <i class="ri-thumb-up-line"></i>
+                                    </button>
+                                    <button>
+                                        <i class="ri-message-2-line"></i>
+                                    </button>
+                                    <button>
+                                        <i class="ri-share-line"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card w-[90%] md:w-full group cursor-pointer relative min-h-[450px]">
+                            <div class="img h-[250px]">
+                                <div class="swiper mySwiperImg">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img class="w-full h-full"
+                                                src="https://images.pexels.com/photos/1438832/pexels-photo-1438832.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                                alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img class="w-full h-full"
+                                                src="https://images.pexels.com/photos/1396132/pexels-photo-1396132.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                                alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img class="w-full h-full"
+                                                src="https://images.pexels.com/photos/280222/pexels-photo-280222.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                                alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-button-prev"></div>
+                                </div>
+                            </div>
+                            <div
+                                class="info w-full bg-white group-hover:bg-[var(--primary-color)]  transition-all duration-300 absolute top-[200px] z-10 top-[-50px] rounded-t-[1.5rem] shadow-xl overflow-hidden p-5 flex flex-col gap-3 h-[215px] group-hover:h-[250px]">
+                                <div class="top-box flex justify-between items-center">
+                                    <div class="badge bg-[#EE574A] text-white px-3 py-1 rounded-sm max-w-max">
+                                        For Sale
+                                    </div>
+                                    <div
+                                        class="price font-bold text-[var(--primary-color)] transition-all group-hover:text-white">
+                                        $579,000
+                                    </div>
+                                </div>
+                                <h3 class="transition-all group-hover:text-white text-start">5110 FL 13th St Ankeny, IA
+                                    50023</h3>
+                                <div class="desc flex justify-between transition-all group-hover:text-white">
+                                    <p>Residential Property</p>
+                                    <p>1,808 Sq. Feet</p>
+                                </div>
+                                <div
+                                    class="bottom-box bg-[#F4F4F4] grid grid-cols-3 justify-center text-center p-1 rounded mt-3">
+                                    <span>5 Beds</span>
+                                    <span>5 Beds</span>
+                                    <span>Kitchen</span>
+                                </div>
+
+                                <div
+                                    class="icons flex justify-evenly text-2xl transition-all w-full group-hover:text-white translate-y-[150%] group-hover:translate-y-[0] delay-300">
+                                    <button>
+                                        <i class="ri-heart-line"></i>
+                                    </button>
+                                    <button>
+                                        <i class="ri-thumb-up-line"></i>
+                                    </button>
+                                    <button>
+                                        <i class="ri-message-2-line"></i>
+                                    </button>
+                                    <button>
+                                        <i class="ri-share-line"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card w-[90%] md:w-full group cursor-pointer relative min-h-[450px]">
+                            <div class="img h-[250px]">
+                                <div class="swiper mySwiperImg">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img class="w-full h-full"
+                                                src="https://images.pexels.com/photos/208736/pexels-photo-208736.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                                alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img class="w-full h-full"
+                                                src="https://images.pexels.com/photos/2640604/pexels-photo-2640604.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                                alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img class="w-full h-full"
+                                                src="https://images.pexels.com/photos/209296/pexels-photo-209296.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                                alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-button-prev"></div>
+                                </div>
+                            </div>
+                            <div
+                                class="info w-full bg-white group-hover:bg-[var(--primary-color)]  transition-all duration-300 absolute top-[200px] z-10 top-[-50px] rounded-t-[1.5rem] shadow-xl overflow-hidden p-5 flex flex-col gap-3 h-[215px] group-hover:h-[250px]">
+                                <div class="top-box flex justify-between items-center">
+                                    <div class="badge bg-[#EE574A] text-white px-3 py-1 rounded-sm max-w-max">
+                                        For Sale
+                                    </div>
+                                    <div
+                                        class="price font-bold text-[var(--primary-color)] transition-all group-hover:text-white">
+                                        $579,000
+                                    </div>
+                                </div>
+                                <h3 class="transition-all group-hover:text-white text-start">5110 FL 13th St Ankeny, IA
+                                    50023</h3>
+                                <div class="desc flex justify-between transition-all group-hover:text-white">
+                                    <p>Residential Property</p>
+                                    <p>1,808 Sq. Feet</p>
+                                </div>
+                                <div
+                                    class="bottom-box bg-[#F4F4F4] grid grid-cols-3 justify-center text-center p-1 rounded mt-3">
+                                    <span>5 Beds</span>
+                                    <span>5 Beds</span>
+                                    <span>Kitchen</span>
+                                </div>
+
+                                <div
+                                    class="icons flex justify-evenly text-2xl transition-all w-full group-hover:text-white translate-y-[150%] group-hover:translate-y-[0] delay-300">
+                                    <button>
+                                        <i class="ri-heart-line"></i>
+                                    </button>
+                                    <button>
+                                        <i class="ri-thumb-up-line"></i>
+                                    </button>
+                                    <button>
+                                        <i class="ri-message-2-line"></i>
+                                    </button>
+                                    <button>
+                                        <i class="ri-share-line"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card w-[90%] md:w-full group cursor-pointer relative min-h-[450px]">
+                            <div class="img h-[250px]">
+                                <div class="swiper mySwiperImg">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img class="w-full h-full"
+                                                src="https://images.pexels.com/photos/53610/large-home-residential-house-architecture-53610.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                                alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img class="w-full h-full"
+                                                src="https://images.pexels.com/photos/277667/pexels-photo-277667.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                                alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img class="w-full h-full"
+                                                src="https://images.pexels.com/photos/209315/pexels-photo-209315.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                                alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-button-prev"></div>
+                                </div>
+                            </div>
+                            <div
+                                class="info w-full bg-white group-hover:bg-[var(--primary-color)]  transition-all duration-300 absolute top-[200px] z-10 top-[-50px] rounded-t-[1.5rem] shadow-xl overflow-hidden p-5 flex flex-col gap-3 h-[215px] group-hover:h-[250px]">
+                                <div class="top-box flex justify-between items-center">
+                                    <div class="badge bg-[#EE574A] text-white px-3 py-1 rounded-sm max-w-max">
+                                        For Sale
+                                    </div>
+                                    <div
+                                        class="price font-bold text-[var(--primary-color)] transition-all group-hover:text-white">
+                                        $579,000
+                                    </div>
+                                </div>
+                                <h3 class="transition-all group-hover:text-white text-start">5110 FL 13th St Ankeny, IA
+                                    50023</h3>
+                                <div class="desc flex justify-between transition-all group-hover:text-white">
+                                    <p>Residential Property</p>
+                                    <p>1,808 Sq. Feet</p>
+                                </div>
+                                <div
+                                    class="bottom-box bg-[#F4F4F4] grid grid-cols-3 justify-center text-center p-1 rounded mt-3">
+                                    <span>5 Beds</span>
+                                    <span>5 Beds</span>
+                                    <span>Kitchen</span>
+                                </div>
+
+                                <div
+                                    class="icons flex justify-evenly text-2xl transition-all w-full group-hover:text-white translate-y-[150%] group-hover:translate-y-[0] delay-300">
+                                    <button>
+                                        <i class="ri-heart-line"></i>
+                                    </button>
+                                    <button>
+                                        <i class="ri-thumb-up-line"></i>
+                                    </button>
+                                    <button>
+                                        <i class="ri-message-2-line"></i>
+                                    </button>
+                                    <button>
+                                        <i class="ri-share-line"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Featured Properties Section End -->
+
+    <!-- About Section Start -->
+    <section id="about" class="py-10 bg-[#ECF0F4] relative">
+        <div class="container mx-auto px-3 flex flex-col lg:flex-row gap-8 lg:items-center">
+            <div class="left flex-1 order-2 lg:order-1">
+                <h2 class="font-noto text-[var(--primary-color)] text-4xl mb-3">
+                    <span>Meet</span>
+                    <br>
+                    <span>AARON LOVETT,</span>
+                </h2>
+                <p class="uppercase text-xl mb-3">YOUR MIDDLE TENNESSEE REALTOR</p>
+                <p>Aaron Lovett is Middle Tennessee's favorite Realtor for a reason. He delivers exceptional service and
+                    exceptional
+                    results. "I believe people should be armed with the best information and advice so they can make
+                    wise decisions to
+                    benefit themselves. And they should be treated with respect, dignity, and kindness along the way.
+                    When I take care of
+                    those elements, my clients always win."Aaron is an award winning Realtor serving the Nashville metro
+                    area, including
+                    Franklin, Brentwood, Smyrna, Murfreesboro, and surrounding areas. You can rely on his knowledge and
+                    experience to help
+                    you make wise decisions so that you can buy and sell with confidence.</p>
+                <div class="btn-box mt-8 flex gap-4">
+                    <button
+                        class="btn btn-2 py-2 border-2 border-[var(--secondary-color)] text-white hover:text-black hover:border-2 hover:border-black">Learn
+                        more</button>
+                    <button
+                        class="btn btn-1 py-2 bg-white border-black  border-2 hover:text-white hover:border-2 hover:border-[var(--secondary-color)]">Contact
+                        now</button>
+                </div>
+            </div>
+            <div class="right flex-1 order-1 lg:order-2 flex justify-center">
+                <div class="img max-w-[400px] max-h-[500px]">
+                    <img class="relative  z-[1] h-full w-full" src="./images/profile-pic.png" alt="">
+                </div>
+                <img class="hidden lg:block absolute top-0 right-0 h-full" src="./images/bg-1.png" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- About Section End -->
+
+    <!-- Client Review Section Start -->
+    <section id="clientReview" class="py-20 relative">
+        <div
+            class="swiper-button-next top-[95%] left-[50%] translate-x-[-50%] ms-[30px] w-10 h-10 bg-[var(--primary-color)] rounded-full">
+        </div>
+        <div
+            class="swiper-button-prev top-[95%] left-[50%] translate-x-[-50%] ms-[-30px] w-10 h-10 bg-[var(--primary-color)] rounded-full">
+        </div>
+
+        <div class="container mx-auto px-3">
+            <div class="sec-header mb-4 text-center">
+                <h2 class="sec-title lg:text-5xl text-[var(--primary-color)] mb-3">
+                    REAL PEOPLE, REAL RESULTS
+                </h2>
+                <p class="sec-sub-title">WHAT OUR CLIENTS SAY ABOUT US</p>
+            </div>
+            <div class="cards grid auto-rows-max">
+
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="card bg-[var(--primary-color)] text-white text-center py-8 px-4 h-full">
+                                <h3 class="title mb-5 text-2xl">Amazing Experience</h3>
+                                <p>Really Love working with Aaron,
+                                    bringing real estate services to
+                                    me and wife and seeing the joy
+                                    on his face is a truly inspiring
+                                    and fulfilling experience.</p>
+                                <div class="review-icons flex justify-center gap-4 mt-10 text-yellow-400 text-xl">
+                                    <span><i class="ri-star-fill"></i></span>
+                                    <span><i class="ri-star-fill"></i></span>
+                                    <span><i class="ri-star-fill"></i></span>
+                                    <span><i class="ri-star-fill"></i></span>
+                                    <span><i class="ri-star-fill"></i></span>
+                                </div>
+                                <div class="user-info flex justify-center gap-4 items-center mt-6">
+                                    <div class="img w-16 h-16 overflow-hidden rounded-full border-2">
+                                        <img class="w-full h-full"
+                                            src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                            alt="">
+                                    </div>
+                                    <div class="details text-start">
+                                        <h4>Oawis John</h4>
+                                        <p>Product Designer</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card bg-[var(--primary-color)] text-white text-center py-8 px-4 h-full">
+                                <h3 class="title mb-5 text-2xl">Very Caring</h3>
+                                <p>Really Love working with Aaron,
+                                    bringing real estate services to
+                                    me and wife and seeing the joy
+                                    on his face is a truly inspiring
+                                    and fulfilling experience.</p>
+                                <div class="review-icons flex justify-center gap-4 mt-10 text-yellow-400 text-xl">
+                                    <span><i class="ri-star-fill"></i></span>
+                                    <span><i class="ri-star-fill"></i></span>
+                                    <span><i class="ri-star-fill"></i></span>
+                                    <span><i class="ri-star-fill"></i></span>
+                                    <span><i class="ri-star-fill"></i></span>
+                                </div>
+                                <div class="user-info flex justify-center gap-4 items-center mt-6">
+                                    <div class="img w-16 h-16 overflow-hidden rounded-full border-2">
+                                        <img class="w-full h-full"
+                                            src="https://images.pexels.com/photos/2773977/pexels-photo-2773977.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                            alt="">
+                                    </div>
+                                    <div class="details text-start">
+                                        <h4>Anis Morsalin</h4>
+                                        <p>Ui/Ux Designer</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card bg-[var(--primary-color)] text-white text-center py-8 px-4 h-full">
+                                <h3 class="title mb-5 text-2xl">Amazing Experience</h3>
+                                <p>Aaron has deep knowledge of real estate market his is truly the best,
+                                    bringing real estate services to
+                                    me and wife and seeing inspiring
+                                    and fulfilling experience.</p>
+                                <div class="review-icons flex justify-center gap-4 mt-10 text-yellow-400 text-xl">
+                                    <span><i class="ri-star-fill"></i></span>
+                                    <span><i class="ri-star-fill"></i></span>
+                                    <span><i class="ri-star-fill"></i></span>
+                                    <span><i class="ri-star-fill"></i></span>
+                                    <span><i class="ri-star-fill"></i></span>
+                                </div>
+                                <div class="user-info flex justify-center gap-4 items-center mt-6">
+                                    <div class="img w-16 h-16 overflow-hidden rounded-full border-2">
+                                        <img class="w-full h-full"
+                                            src="https://images.pexels.com/photos/432059/pexels-photo-432059.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                            alt="">
+                                    </div>
+                                    <div class="details text-start">
+                                        <h4>Oawis John</h4>
+                                        <p>Product Designer</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card bg-[var(--primary-color)] text-white text-center py-8 px-4 h-full">
+                                <h3 class="title mb-5 text-2xl">Deep Knowledgeable</h3>
+                                <p>Really Love working with Aaron,
+                                    bringing real estate services to
+                                    me and wife and seeing the joy
+                                    on his face is a truly inspiring
+                                    and fulfilling experience.</p>
+                                <div class="review-icons flex justify-center gap-4 mt-10 text-yellow-400 text-xl">
+                                    <span><i class="ri-star-fill"></i></span>
+                                    <span><i class="ri-star-fill"></i></span>
+                                    <span><i class="ri-star-fill"></i></span>
+                                    <span><i class="ri-star-fill"></i></span>
+                                    <span><i class="ri-star-fill"></i></span>
+                                </div>
+                                <div class="user-info flex justify-center gap-4 items-center mt-6">
+                                    <div class="img w-16 h-16 overflow-hidden rounded-full border-2">
+                                        <img class="w-full h-full"
+                                            src="https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                            alt="">
+                                    </div>
+                                    <div class="details text-start">
+                                        <h4>Anis Morsalin</h4>
+                                        <p>Product Designer</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card bg-[var(--primary-color)] text-white text-center py-8 px-4 h-full">
+                                <h3 class="title mb-5 text-2xl">Deep Caring</h3>
+                                <p>Aaron has deep knowledge of real estate market his is truly the best,
+                                    bringing real estate services to
+                                    me and wife and seeing inspiring
+                                    and fulfilling experience.</p>
+                                <div class="review-icons flex justify-center gap-4 mt-10 text-yellow-400 text-xl">
+                                    <span><i class="ri-star-fill"></i></span>
+                                    <span><i class="ri-star-fill"></i></span>
+                                    <span><i class="ri-star-fill"></i></span>
+                                    <span><i class="ri-star-fill"></i></span>
+                                    <span><i class="ri-star-fill"></i></span>
+                                </div>
+                                <div class="user-info flex justify-center gap-4 items-center mt-6">
+                                    <div class="img w-16 h-16 overflow-hidden rounded-full border-2">
+                                        <img class="w-full h-full"
+                                            src="https://images.pexels.com/photos/762020/pexels-photo-762020.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                            alt="">
+                                    </div>
+                                    <div class="details text-start">
+                                        <h4>Oawis John</h4>
+                                        <p>Ui/Ux Designer</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Client Review Section End -->
+
+
+    <!-- Create Account Section Start -->
+    <section id="createAccount" class="py-20">
+        <div class="container mx-auto px-3">
+            <div class="sec-header mb-4 text-center">
+                <h2 class="sec-title lg:text-5xl text-[var(--primary-color)] mb-3">
+                    LET’S CREATE AN ACCOUNT
+                </h2>
+                <p class="sec-sub-title">TAKE CONTROL OF YOUR HOME SEARCH</p>
+            </div>
+            <div class="top-cards grid gap-4 sm:grid-cols-2">
+                <div class="card bg-[var(--primary-color)] text-white text-center p-6">
+                    <h3 class="title mb-5 text-3xl md:text-4xl uppercase">Don't get stuck - <br>
+                        the choice is yours</h3>
+                    <p>Buy the right home. Sell for the best price. Do it with ease and confidence. And be treated like
+                        a human being the whole
+                        time!</p>
+                </div>
+                <div class="card bg-[var(--primary-color)] text-white text-center p-6">
+                    <h3 class="title mb-5 text-3xl md:text-4xl uppercase">No bait <br> and switch</h3>
+                    <p>I work directly with each of my clients. You don't have to worry about your needs being
+                        subordinated to a junior agent
+                        on some bloated team. Throughout every step of the home selling and buying process, I'll be your
+                        guide, negotiator, and
+                        main point of contact so that everything flows smoothly.</p>
+                </div>
+                <div class="card bg-[var(--primary-color)] text-white text-center p-6">
+                    <h3 class="title mb-5 text-3xl md:text-4xl uppercase">The professionals <br>
+                        I partner with</h3>
+                    <p>I wouldn't want to do this alone. Over the years, I have learned who are the "best of the best"
+                        to work with to get your
+                        home bought and sold. Having access to the best mortgage lenders, title attorneys, contractors,
+                        photographers,
+                        videographers, appraisers, home inspectors, and others means that even when problems arise,
+                        we'll find the best
+                        solutions.</p>
+                </div>
+                <div class="card bg-[var(--primary-color)] text-white text-center p-6">
+                    <h3 class="title mb-5 text-3xl md:text-4xl uppercase">Moving out <br>
+                        of Middle TN?</h3>
+                    <p>Don't leave your choice of Realtor up to chance. I am one of a connected group of top producers
+                        across North America.
+                        Whether you are moving across the state or across the country, I can connect you with a real
+                        estate professional that
+                        will give you the same excellent level of service that I provide.</p>
+                </div>
+            </div>
+            <div class="bottom-cards mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-0">
+                <div class="card text-center p-4">
+                    <h3 class="title mb-5 text-3xl md:text-4xl uppercase text-[var(--primary-color)] font-[500]">E-MAIL
+                        ALERTS</h3>
+                    <p class="mb-3">Get new listings in your inbox without even speaking with a Realtor. Edit or cancel
+                        your e-mail alerts any time, no
+                        strings attached.</p>
+                    <p class="mb-6">How to do it: Click "Save Search" on any search page.</p>
+                    <button
+                        class="px-3 py-1.5 border-2 border-[--primary-color] text-[var(--primary-color)] transition-all duration-300 hover:bg-[var(--primary-color)] hover:text-white ">
+                        Get Listing Mail
+                    </button>
+                </div>
+                <div class="card text-center p-4">
+                    <h3 class="title mb-5 text-3xl md:text-4xl uppercase text-[var(--primary-color)] font-[500]">GROUP
+                        SEARCH</h3>
+                    <p class="mb-3">Searching for a home often involves family and friends. Collaborate online!</p>
+                    <p class="mb-6">How to do it: Click "Invite a friend to your Search Party" from one of your saved
+                        searches.</p>
+                    <button
+                        class="px-3 py-1.5 border-2 border-[--primary-color] text-[var(--primary-color)] transition-all duration-300 hover:bg-[var(--primary-color)] hover:text-white ">
+                        MLS Search
+                    </button>
+                </div>
+                <div class="card text-center p-4">
+                    <h3 class="title mb-5 text-3xl md:text-4xl uppercase text-[var(--primary-color)] font-[500]">SAVE
+                        REACTIONS</h3>
+                    <p class="mb-3">Never lose track of your favorite
+                        homes again!</p>
+                    <p class="mb-6">How to do it: Mark your favorites and leave comments on any property page. Share
+                        homes on social media and contact an
+                        agent only when you want to.</p>
+                    <button
+                        class="px-3 py-1.5 border-2 border-[--primary-color] text-[var(--primary-color)] transition-all duration-300 hover:bg-[var(--primary-color)] hover:text-white ">
+                        Sell My Property
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Create Account Section End -->
+
+
+    <!-- Contact Section Start -->
+    <section id="contact">
+        <div class="top-part flex flex-col md:flex-row">
+            <div class="contact-wrapper-1 flex-1">
+                <div class="contact__info py-16 ps-8 pe-4 text-white/70 max-w-[800px] md:ms-auto">
+                    <h2 class="text-white font-noto text-3xl lg:text-4xl mb-8">GET A FREE <br> CONSULTATION NOW!
+                    </h2>
+                    <div class="infos flex flex-col gap-4">
+                        <div class="single-box flex items-center gap-4">
+                            <div class="icon">
+                                <span
+                                    class="flex justify-center items-center w-10 h-10 rounded-full bg-white text-black text-lg">
+                                    <i class="ri-phone-fill"></i>
+                                </span>
+                            </div>
+                            <div class="text">
+                                <div>
+                                    <span>Mobile: </span><a href="tel:+9312153805"> 9312153805</a>
+                                </div>
+                                <div>
+                                    <span>Office: </span><a href="tel:+6158487744">6158487744</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single-box flex items-center gap-4">
+                            <div class="icon">
+                                <span
+                                    class="flex justify-center items-center w-10 h-10 rounded-full bg-white text-black text-lg">
+                                    <i class="ri-mail-line"></i>
+                                </span>
+                            </div>
+                            <div class="text">
+                                <div>
+                                    <a href="mailto:youremailaddress@.com"> youremailaddress@.com</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single-box flex items-center gap-4">
+                            <div class="icon">
+                                <span
+                                    class="flex justify-center items-center w-10 h-10 rounded-full bg-white text-black text-lg">
+                                    <i class="ri-map-pin-2-line"></i>
+                                </span>
+                            </div>
+                            <div class="text">
+                                <div>
+                                    511 N. Thompson <br> LaneMurfreesboro, TN 37129
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="quote italic mt-16">
+                        <p>“The best decision we made in moving was using Aaron Lovett as our Realtor. I didn't have to
+                            worry about a
+                            thing because
+                            he was ON it!.”</p>
+                        <p class="font-medium">&minus;Amanda</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-wrapper-2 flex-1 bg-[var(--primary-color)]">
+                <div class="contact__form px-8 py-10 max-w-[800px] md:me-auto">
+                    <form action="">
+                        <small class="block mb-1" id="formMsg"></small>
+                        <div class="single-field mb-5">
+                            <input class="bg-white px-8 py-2.5 w-full focus:outline-[var(--secondary-color)]"
+                                type="text" name="" id="fullName" placeholder="Type your full name here">
+                        </div>
+                        <div class="single-field mb-5">
+                            <input class="bg-white px-8 py-2.5 w-full focus:outline-[var(--secondary-color)]"
+                                type="email" name="" id="email" placeholder="Email address @ here">
+                        </div>
+                        <div class="single-field mb-5">
+                            <input class="bg-white px-8 py-2.5 w-full focus:outline-[var(--secondary-color)]"
+                                type="text" name="" id="phoneNumber" placeholder="Phone number">
+                        </div>
+                        <div class="single-field mb-5">
+                            <textarea
+                                class="bg-white px-8 py-2.5 w-full focus:outline-[var(--secondary-color)] resize-none min-h-[200px]"
+                                name="" id="message" placeholder="Type your message here"></textarea>
+                        </div>
+                        <div class="btn-box">
+                            <button id="appointmentBtn"
+                                class="bg-[var(--secondary-color)]  text-white w-full p-3 border-2 border-[var(--secondary-color)] transition-all duration-300 hover:text-[var(--secondary-color)] hover:bg-transparent">Book
+                                your Appointment</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-part container mx-auto px-3 py-16 ">
+            <p class="text-center font-medium text-lg max-w-[1000px] mx-auto">Use the <a class="underline" href="#">MLS
+                    search</a> to find homes for sale in <a class="underline" href="#">Smyrna</a>, <a class="underline"
+                    href="#">Nashville</a>, <a class="underline" href="#">Murfreesboro</a>, <a class="underline"
+                    href="#">Franklin</a>, <a class="underline" href="#">Brentwood</a>, <a class="underline"
+                    href="#">Spring Hill</a>, <a class="underline" href="#">Lebanon</a>,
+                <a class="underline" href="#">Mount Juliet</a>, and throughout the Nashville Metro area. Search for
+                land, commercial properties, or homes for sale in
+                Tennessee. For help with a custom search directly from the MLS.
+            </p>
+
+            <div class="btn-box text-center mt-8">
+                <button
+                    class="bg-[var(--primary-color)]  text-white px-3 py-2 border-2 border-[var(--primary-color)] transition-all duration-300 hover:text-[var(--primary-color)] hover:bg-transparent">Contact
+                    Aaron</button>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section End -->
+
+
+    <!-- Banner Section Start -->
+    <section id="banner" class="py-10 bg-[var(--secondary-color)] relative">
+        <div class="hidden md:block img absolute top-0 right-0 translate-y-[-30%] w-[400px]">
+            <img class="w-full h-full" src="./images/house-1.png" alt="">
+        </div>
+        <div class="container mx-auto px-3">
+            <div class="md:max-w-[65%]">
+                <h2
+                    class="font-noto text-center md:text-start text-4xl xl:text-5xl font-medium text-[var(--primary-color)] leading-[50px] xl:leading-[70px]">
+                    Do you have a Home or Property in Middle Tennessee to sell?</h2>
+                <div class="btn-box text-center md:text-start mt-20">
+                    <button
+                        class="bg-[var(--primary-color)]  text-white px-6 py-2 border-2 border-white transition-all duration-300 hover:text-white hover:bg-transparent">I’m
+                        Ready!</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Banner Section End -->
+
+
+    <!-- Footer Section Start -->
+    <footer id="footer" class="py-16 bg-[var(--primary-color)] text-white">
+        <div class="container mx-auto px-3 flex flex-col md:flex-row gap-8 md:gap-4">
+            <div class="left flex-1">
+                <div class="logo mb-8">
+                    <a href="/">
+                        <img src="./images/logo-2.png" alt="">
+                    </a>
+                </div>
+                <div class="contact-box mb-4">
+                    <h4 class="font-medium text-lg">Contact us now!</h4>
+                    <div class="text-white/80">
+                        <span>Mobile: </span><a href="tel:+9312153805"> 9312153805</a>
+                    </div>
+                    <div class="text-white/80">
+                        <span>Office: </span><a href="tel:+6158487744">6158487744</a>
+                    </div>
+                </div>
+
+                <p class="text-sm text-white/70">Weichert Realtors,The Andrews Group511 N. Thompson LaneMurfreesboro, TN
+                    37129TN#
+                    262813; 338580</p>
+                <div class="social-box mt-10">
+                    <p>Follow us on social media</p>
+                    <div class="icons flex gap-3 text-lg">
+                        <a href="#" class="transition-all duration-300 hover:text-[var(--secondary-color)]">
+                            <i class="ri-facebook-fill"></i>
+                        </a>
+                        <a href="#" class="transition-all duration-300 hover:text-[var(--secondary-color)]">
+                            <i class="ri-twitter-fill"></i>
+                        </a>
+                        <a href="#" class="transition-all duration-300 hover:text-[var(--secondary-color)]">
+                            <i class="ri-linkedin-line"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="right flex-1">
+                <div class="top grid grid-cols-2 sm:grid-cols-4 md:grid-cols-2 xl:grid-cols-4 gap-6">
+                    <div class="col">
+                        <h3 class="uppercase font-medium text-lg mb-3">COMPANY</h3>
+                        <div class="links flex flex-col gap-2 items-start">
+                            <a href="#" class="transition-all duration-300 hover:underline">Home</a>
+                            <a href="#" class="transition-all duration-300 hover:underline">Properties</a>
+                            <a href="#" class="transition-all duration-300 hover:underline">About Us</a>
+                            <a href="#" class="transition-all duration-300 hover:underline">Testimonials</a>
+                            <a href="#" class="transition-all duration-300 hover:underline">Consultation</a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <h3 class="uppercase font-medium text-lg mb-3">BUY & SELL</h3>
+                        <div class="links flex flex-col gap-2 items-start">
+                            <a href="#" class="transition-all duration-300 hover:underline">Find an Agent</a>
+                            <a href="#" class="transition-all duration-300 hover:underline">Find A Home</a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <h3 class="uppercase font-medium text-lg mb-3">Resources</h3>
+                        <div class="links flex flex-col gap-2 items-start">
+                            <a href="#" class="transition-all duration-300 hover:underline">Post V1</a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <h3 class="uppercase font-medium text-lg mb-3">CAREER</h3>
+                        <div class="links flex flex-col gap-2 items-start">
+                            <a href="#" class="transition-all duration-300 hover:underline">Join Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom logos flex gap-4 flex-wrap mt-10">
+                    <a href="#"><img src="./images/image-1.png" alt=""></a>
+                    <a href="#"><img src="./images/image-2.png" alt=""></a>
+                    <a href="#"><img src="./images/image-3.png" alt=""></a>
+                    <a href="#"><img src="./images/image-4.png" alt=""></a>
+                    <a href="#"><img src="./images/image-5.png" alt=""></a>
+                    <a href="#"><img src="./images/image-6.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Move To Top Button Start -->
+    <button id="moveToTopBtn"
+        class="bg-white w-[40px] h-[35px] flex justify-center items-center fixed top-[90%] right-4 lg:right-[5%] text-2xl font-bold z-40 shadow hidden"><i
+            class="ri-arrow-up-line"></i></button>
+    <!-- Move To Top Button End -->
+
+    <!-- Custom JS -->
+    <script type="module" src="./js/main.js"></script>
+</body>
+
+</html>
